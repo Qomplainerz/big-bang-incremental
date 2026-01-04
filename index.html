@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Bang Incremental | AdeptusCode</title>
+    <link rel="stylesheet" href="BigBangIncremental.css">
+</head>
+
+<body>
+
+    <header id="game_header">
+        <h1>Big Bang Incremental</h1>
+        <p id="universe-age">Age of the Universe: <span id="age-value">0</span> Planck times</p>
+    </header>
+
+    <main id="universe-core">
+
+        <section id="visual-space" aria-label="Universe Visualization">
+            <canvas id="expansion-canvas"></canvas>
+        </section>
+
+        <section id="statistics">
+            <h2>Cosmic Data</h2>
+            <p>Total Atoms: <span id="atom-count">0</span></p>
+            <p>Expansion Speed: <span id="speed_value">0</span> Lightyears/s</p>
+            <p>Universe Radius: <span id="radius-value">0</span> Gly</p>
+        </section>
+
+        <section id="actions">
+            <button id="big-bang-trigger" type="button">Initiate Big Bang</button>
+
+            <article id="atom-generator" class="upgrade-card">
+                <h3>Synthesize Atom</h3>
+                <p>Generates 1 atom per click.</p>
+                <button id="buy_atom" disabled>Buy Atom (Cost: <span id="atom-cost">10</span> energy)</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="game-footer">
+        <small>&copy; 2026 AdeptusCode | Powered by Companionem Linguae Logic</small>
+    </footer>
+
+    <script src="BigBangIncremental.js"></script>
+
+</body>
+</html>
